@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop all Products</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/shopallproducts.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  </head>
+  <body>
+    <div class="container-fluid space">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img
+              src="./assets/Main-Logo 1logo.png"
+              alt="Rock the World"
+              class="w-50"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text fw-normal fs-6 lh-1"
+                  aria-current="page"
+                  href="#"
+                  >Shop Crystals</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active text fw-normal fs-6 lh-1 ms-5"
+                  aria-current="page"
+                  href="#"
+                  >Speciality</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active text fw-normal fs-6 lh-1 ms-5"
+                  aria-current="page"
+                  href="#"
+                  >Intentions</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active text fw-normal fs-6 lh-1 ms-5"
+                  aria-current="page"
+                  href="#"
+                  >Our Story</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active text fw-normal fs-6 lh-1 ms-5"
+                  aria-current="page"
+                  href="#"
+                  >Retreats</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active text fw-normal fs-6 lh-1 ms-5"
+                  aria-current="page"
+                  href="#"
+                  ><img
+                    src="./assets/heart-svgrepo-com (2) 1.png"
+                    alt="favourites"
+                /></a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active text fw-normal fs-6 lh-1 ms-2"
+                  aria-current="page"
+                  href="#"
+                  ><img
+                    src="./assets/cart-shopping-regular 1.png"
+                    alt="favourites"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+<!-- Header -->
+
+
+      <div class="mb-4" style="position: relative;">
+        <div>
+          <img
+          src="./assets/Mask group.png"
+          alt=""
+          class="w-100 img-fluid"
+        />
+
+        </div>
+
+        <div
+          class="text-center" style="position: absolute; top: 45%; left: 24%;"
+        >
+          <h1 class="text-white" style="font-size: 70px;">Select Your Product</h1>
+        </div>
+      </div>
+
+
+
+      <!-- Listings -->
+      
+
+<div class="container-fluid mb-3">
+  <div class="row">
+    <div class="d-flex justify-content-between mt-4 mb-4 align-items-center">
+      <h2 class="fw-normal fs-1 text-center">Shop Your Choice</h2>
+      <form class="d-flex" role="search">
+        <input
+          class="form-control me-2 search text fw-400 fs-6 shadow-none"
+          type="search"
+          placeholder="Search Product Here...."
+          aria-label="Search"
+        />
+        <button class="btn btn-outline btn-sm mybtn" type="submit">
+          Search
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-3">
+      <button type="button" class="btn w-100 mb-4 text-white" style="background-color: #1B1C27;"><img src="./assets/filter-1-svgrepo-com 1.png" alt="" class="me-2">Filters</button>
+      <div class="accordion accordion-flush" id="accordionFlushExample1">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed shadow-none mb-4" type="button" style="background-color: #F1F1F1;" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Shop By Intention
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample1">
+            <div class="accordion-body">
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Love
+                </label>
+              </div>
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Uplift
+                </label>
+              </div>
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Protect
+                </label>
+              </div>
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Balance
+                </label>
+              </div>
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Heal
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+
+    <div class="accordion accordion-flush" id="accordionFlushExample2">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed shadow-none mb-4" style="background-color: #F1F1F1;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsetwo" aria-expanded="false" aria-controls="flush-collapseOne">
+            Price
+          </button>
+        </h2>
+        <div id="flush-collapsetwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample2">
+          <div class="accordion-body">
+            <div class="row">
+              <div class="col-sm-5">
+                <input class="form-control form-control-lg p-0 fs-6 text-center shadow-none" type="text" placeholder="$10.00" aria-label=".form-control-lg example">
+              </div>
+              <div class="col-sm-2 d-flex justify-content-center align-items-center">
+                <span class="text-center">to</span>
+              </div>
+              <div class="col-sm-5">
+                <input class="form-control form-control-lg p-0 fs-6 text-center shadow-none" type="text" placeholder="$1500.00" aria-label=".form-control-lg example">
+              </div>
+              <div class="slidecontainer">
+                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion accordion-flush" id="accordionFlushExample3">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed shadow-none mb-4" type="button" style="background-color: #F1F1F1;" data-bs-toggle="collapse" data-bs-target="#flush-collapsethree" aria-expanded="false" aria-controls="flush-collapseOne">
+            Colors
+          </button>
+        </h2>
+        <div id="flush-collapsethree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample3">
+          <div class="accordion-body p-0">
+            <div class="color-picker container-fluid px-0 py-3">
+              <div class="mycolor me-3 mb-2" style="border-color: #AA9AE0;"><div class="color-box red me-2"></div></div>
+              <div class="mycolor me-3 mb-2"><div class="color-box green"></div></div>
+              <div class="mycolor me-3 mb-2"><div class="color-box blue"></div></div>
+              <div class="mycolor me-3"><div class="color-box yellow"></div></div>
+              <div class="mycolor me-3"><div class="color-box orange"></div></div>
+              <div class="mycolor me-3"><div class="color-box purple"></div></div>
+              <div class="mycolor me-3"><div class="color-box light"></div></div>
+              <div class="mycolor me-3"><div class="color-box lgreen"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+
+
+
+
+      <div class="accordion accordion-flush" id="accordionFlushExample4">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed shadow-none mb-4" type="button" style="background-color: #F1F1F1;" data-bs-toggle="collapse" data-bs-target="#flush-collapsefour" aria-expanded="false" aria-controls="flush-collapseOne">
+              Shape
+            </button>
+          </h2>
+          <div id="flush-collapsefour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample4">
+            <div class="accordion-body">
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Bowls
+                </label>
+              </div>
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Cabochons
+                </label>
+              </div>
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Carving
+                </label>
+              </div>
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Eggs
+                </label>
+              </div>
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Freeform
+                </label>
+              </div>
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Heart
+                </label>
+              </div>
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Slab
+                </label>
+              </div>
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Sphere
+                </label>
+              </div>
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Wand
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+
+    <div class="accordion accordion-flush" id="accordionFlushExample5">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed shadow-none mb-4" type="button" style="background-color: #F1F1F1;" data-bs-toggle="collapse" data-bs-target="#flush-collapsefive" aria-expanded="false" aria-controls="flush-collapseOne">
+            Chakra
+          </button>
+        </h2>
+        <div id="flush-collapsefive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample5">
+          <div class="accordion-body">
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Crown
+              </label>
+            </div>
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Heart
+              </label>
+            </div>
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Root
+              </label>
+            </div>
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Sacral
+              </label>
+            </div>
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Solar Plexus
+              </label>
+            </div>
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Third Eye
+              </label>
+            </div>
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Throat
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+
+
+    </div>
+
+
+
+
+    
+
+
+    <div class="col-sm-9">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card text-center cardborder">
+            <div class="" style="position: relative;">
+              <img src="./assets/image 27.png" class="card-img-top rounded-0" alt="..." />
+              <div class="image-con d-flex justify-content-center align-items-center rounded-circle" style="width: 40px;height:40px ; background-color: white; position: absolute; top: 10px; right: 10px;">
+                <img src="./assets/heart-svgrepo-com (2) 1.png" alt="" class="heart" width="25" height="25" style="z-index: 2;">
+              </div>
+            </div>
+
+            <div class="card-body">
+              <h6 class="card-title cardtext">$ 100.00</h6>
+              <h6 class="card-text">Amethyst</h6>
+              <h6 class="card-text">Heal</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card text-center cardborder">
+            <div class="" style="position: relative;">
+              <img src="./assets/image 22.png" class="card-img-top rounded-0" alt="..." />
+              <div class="image-con d-flex justify-content-center align-items-center rounded-circle" style="width: 40px;height:40px ; background-color: white; position: absolute; top: 10px; right: 10px;">
+                <img src="./assets/heart-svgrepo-com (2) 1.png" alt="" class="heart" width="25" height="25" style="z-index: 2;">
+              </div>
+            </div>
+            <div class="card-body">
+              <h6 class="card-title cardtext">$ 100.00</h6>
+              <h6 class="card-text">Amethyst</h6>
+              <h6 class="card-text">Heal</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card text-center cardborder">
+            <div class="" style="position: relative;">
+              <img src="./assets/image 28.png" class="card-img-top rounded-0" alt="..." />
+              <div class="image-con d-flex justify-content-center align-items-center rounded-circle" style="width: 40px;height:40px ; background-color: white; position: absolute; top: 10px; right: 10px;">
+                <img src="./assets/heart-svgrepo-com (2) 1.png" alt="" class="heart" width="25" height="25" style="z-index: 2;">
+              </div>
+            </div>
+            <div class="card-body">
+              <h6 class="card-title cardtext">$ 100.00</h6>
+              <h6 class="card-text">Amethyst</h6>
+              <h6 class="card-text">Heal</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card text-center cardborder" style="width: 18rem">
+            <div class="" style="position: relative;">
+              <img src="./assets/image 3.png" class="card-img-top rounded-0" alt="..." />
+              <div class="image-con d-flex justify-content-center align-items-center rounded-circle" style="width: 40px;height:40px ; background-color: white; position: absolute; top: 10px; right: 10px;">
+                <img src="./assets/heart-svgrepo-com (2) 1.png" alt="" class="heart" width="25" height="25" style="z-index: 2;">
+              </div>
+            </div>
+            <div class="card-body">
+              <h6 class="card-title cardtext">$ 100.00</h6>
+              <h6 class="card-text">Amethyst</h6>
+              <h6 class="card-text">Heal</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card text-center cardborder" style="width: 18rem">
+            <div class="" style="position: relative;">
+              <img src="./assets/image 4.png" class="card-img-top rounded-0" alt="..." />
+              <div class="image-con d-flex justify-content-center align-items-center rounded-circle" style="width: 40px;height:40px ; background-color: white; position: absolute; top: 10px; right: 10px;">
+                <img src="./assets/heart-svgrepo-com (2) 1.png" alt="" class="heart" width="25" height="25" style="z-index: 2;">
+              </div>
+            </div>
+            <div class="card-body">
+              <h6 class="card-title cardtext">$ 100.00</h6>
+              <h6 class="card-text">Amethyst</h6>
+              <h6 class="card-text">Heal</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card text-center cardborder" style="width: 18rem">
+            <div class="" style="position: relative;">
+              <img src="./assets/image 5.png" class="card-img-top rounded-0" alt="..." />
+              <div class="image-con d-flex justify-content-center align-items-center rounded-circle" style="width: 40px;height:40px ; background-color: white; position: absolute; top: 10px; right: 10px;">
+                <img src="./assets/heart-svgrepo-com (2) 1.png" alt="" class="heart" width="25" height="25" style="z-index: 2;">
+              </div>
+            </div>
+            <div class="card-body">
+              <h6 class="card-title cardtext">$ 100.00</h6>
+              <h6 class="card-text">Amethyst</h6>
+              <h6 class="card-text">Heal</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card text-center cardborder" style="width: 18rem">
+            <div class="" style="position: relative;">
+              <img src="./assets/image 27.png" class="card-img-top rounded-0" alt="..." />
+              <div class="image-con d-flex justify-content-center align-items-center rounded-circle" style="width: 40px;height:40px ; background-color: white; position: absolute; top: 10px; right: 10px;">
+                <img src="./assets/heart-svgrepo-com (2) 1.png" alt="" class="heart" width="25" height="25" style="z-index: 2;">
+              </div>
+            </div>
+            <div class="card-body">
+              <h6 class="card-title cardtext">$ 100.00</h6>
+              <h6 class="card-text">Amethyst</h6>
+              <h6 class="card-text">Heal</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card text-center cardborder" style="width: 18rem">
+            <div class="" style="position: relative;">
+              <img src="./assets/image 22.png" class="card-img-top rounded-0 " alt="..." />
+              <div class="image-con d-flex justify-content-center align-items-center rounded-circle" style="width: 40px;height:40px ; background-color: white; position: absolute; top: 10px; right: 10px;">
+                <img src="./assets/heart-svgrepo-com (2) 1.png" alt="" class="heart" width="25" height="25" style="z-index: 2;">
+              </div>
+            </div>
+            <div class="card-body">
+              <h6 class="card-title cardtext">$ 100.00</h6>
+              <h6 class="card-text">Amethyst</h6>
+              <h6 class="card-text">Heal</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card text-center cardborder" style="width: 18rem">
+            <div class="" style="position: relative;">
+              <img src="./assets/image 28.png" class="card-img-top rounded-0" alt="..." />
+              <div class="image-con d-flex justify-content-center align-items-center rounded-circle" style="width: 40px;height:40px ; background-color: white; position: absolute; top: 10px; right: 10px;">
+                <img src="./assets/heart-svgrepo-com (2) 1.png" alt="" class="heart" width="25" height="25" style="z-index: 2;">
+              </div>
+            </div>
+            <div class="card-body">
+              <h6 class="card-title cardtext">$ 100.00</h6>
+              <h6 class="card-text">Amethyst</h6>
+              <h6 class="card-text">Heal</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card text-center cardborder" style="width: 18rem">
+            <div class="" style="position: relative;">
+              <img src="./assets/image 3.png" class="card-img-top rounded-0" alt="..." />
+              <div class="image-con d-flex justify-content-center align-items-center rounded-circle" style="width: 40px;height:40px ; background-color: white; position: absolute; top: 10px; right: 10px;">
+                <img src="./assets/heart-svgrepo-com (2) 1.png" alt="" class="heart" width="25" height="25" style="z-index: 2;">
+              </div>
+            </div>
+            <div class="card-body">
+              <h6 class="card-title cardtext">$ 100.00</h6>
+              <h6 class="card-text">Amethyst</h6>
+              <h6 class="card-text">Heal</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card text-center cardborder" style="width: 18rem">
+            <div class="" style="position: relative;">
+              <img src="./assets/image 4.png" class="card-img-top rounded-0" alt="..." />
+              <div class="image-con d-flex justify-content-center align-items-center rounded-circle" style="width: 40px;height:40px ; background-color: white; position: absolute; top: 10px; right: 10px;">
+                <img src="./assets/heart-svgrepo-com (2) 1.png" alt="" class="heart" width="25" height="25" style="z-index: 2;">
+              </div>
+            </div>
+            <div class="card-body">
+              <h6 class="card-title cardtext">$ 100.00</h6>
+              <h6 class="card-text">Amethyst</h6>
+              <h6 class="card-text">Heal</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card text-center cardborder" style="width: 18rem">
+            <div class="" style="position: relative;">
+              <img src="./assets/image 5.png" class="card-img-top rounded-0" alt="..." />
+              <div class="image-con d-flex justify-content-center align-items-center rounded-circle" style="width: 40px;height:40px ; background-color: white; position: absolute; top: 10px; right: 10px;">
+                <img src="./assets/heart-svgrepo-com (2) 1.png" alt="" class="heart" width="25" height="25" style="z-index: 2;">
+              </div>
+            </div>
+            <div class="card-body">
+              <h6 class="card-title cardtext">$ 100.00</h6>
+              <h6 class="card-text">Amethyst</h6>
+              <h6 class="card-text">Heal</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card text-center cardborder" style="width: 18rem">
+            <div class="" style="position: relative;">
+              <img src="./assets/image 27.png" class="card-img-top rounded-0" alt="..." />
+              <div class="image-con d-flex justify-content-center align-items-center rounded-circle" style="width: 40px;height:40px ; background-color: white; position: absolute; top: 10px; right: 10px;">
+                <img src="./assets/heart-svgrepo-com (2) 1.png" alt="" class="heart" width="25" height="25" style="z-index: 2;">
+              </div>
+            </div>
+            <div class="card-body">
+              <h6 class="card-title cardtext">$ 100.00</h6>
+              <h6 class="card-text">Amethyst</h6>
+              <h6 class="card-text">Heal</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card text-center cardborder" style="width: 18rem">
+            <div class="" style="position: relative;">
+              <img src="./assets/image 22.png" class="card-img-top rounded-0" alt="..." />
+              <div class="image-con d-flex justify-content-center align-items-center rounded-circle" style="width: 40px;height:40px ; background-color: white; position: absolute; top: 10px; right: 10px;">
+                <img src="./assets/heart-svgrepo-com (2) 1.png" alt="" class="heart" width="25" height="25" style="z-index: 2;">
+              </div>
+            </div>
+            <div class="card-body">
+              <h6 class="card-title cardtext">$ 100.00</h6>
+              <h6 class="card-text">Amethyst</h6>
+              <h6 class="card-text">Heal</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card text-center cardborder" style="width: 18rem">
+            <div class="" style="position: relative;">
+              <img src="./assets/image 28.png" class="card-img-top rounded-0 " alt="..." />
+              <div class="image-con d-flex justify-content-center align-items-center rounded-circle" style="width: 40px;height:40px ; background-color: white; position: absolute; top: 10px; right: 10px;">
+                <img src="./assets/heart-svgrepo-com (2) 1.png" alt="" class="heart" width="25" height="25" style="z-index: 2;">
+              </div>
+            </div>
+            <div class="card-body">
+              <h6 class="card-title cardtext">$ 100.00</h6>
+              <h6 class="card-text">Amethyst</h6>
+              <h6 class="card-text">Heal</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card text-center cardborder" style="width: 18rem">
+            <div class="" style="position: relative;">
+              <img src="./assets/image 3.png" class="card-img-top rounded-0" alt="..." />
+              <div class="image-con d-flex justify-content-center align-items-center rounded-circle" style="width: 40px;height:40px ; background-color: white; position: absolute; top: 10px; right: 10px;">
+                <img src="./assets/heart-svgrepo-com (2) 1.png" alt="" class="heart" width="25" height="25" style="z-index: 2;">
+              </div>
+            </div>
+            <div class="card-body">
+              <h6 class="card-title cardtext">$ 100.00</h6>
+              <h6 class="card-text">Amethyst</h6>
+              <h6 class="card-text">Heal</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card text-center cardborder" style="width: 18rem">
+            <div class="" style="position: relative;">
+              <img src="./assets/image 4.png" class="card-img-top rounded-0 " alt="..." />
+              <div class="image-con d-flex justify-content-center align-items-center rounded-circle" style="width: 40px;height:40px ; background-color: white; position: absolute; top: 10px; right: 10px;">
+                <img src="./assets/heart-svgrepo-com (2) 1.png" alt="" class="heart" width="25" height="25" style="z-index: 2;">
+              </div>
+            </div>
+            <div class="card-body">
+              <h6 class="card-title cardtext">$ 100.00</h6>
+              <h6 class="card-text">Amethyst</h6>
+              <h6 class="card-text">Heal</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card text-center cardborder" style="width: 18rem">
+            <div class="" style="position: relative;">
+              <img src="./assets/image 5.png" class="card-img-top rounded-0" alt="..." />
+              <div class="image-con d-flex justify-content-center align-items-center rounded-circle" style="width: 40px;height:40px ; background-color: white; position: absolute; top: 10px; right: 10px;">
+                <img src="./assets/heart-svgrepo-com (2) 1.png" alt="" class="heart" width="25" height="25" style="z-index: 2;">
+              </div>
+            </div>
+            <div class="card-body">
+              <h6 class="card-title cardtext">$ 100.00</h6>
+              <h6 class="card-text">Amethyst</h6>
+              <h6 class="card-text">Heal</h6>
+            </div>
+      </div>
+    </div>
+
+      </div>
+      
+      
+      <div class="row">
+<!-- Pagination -->
+
+
+
+<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Previous">
+          <img src="./assets/arrow-open-down-svgrepo-com 1 (1).png" alt="">                </a>
+    </li>
+    <li class="page-item pageborder"><a class="page-link" href="#">1</a></li>
+    <li class="page-item pageborder"><a class="page-link" href="#">2,</a></li>
+    <li class="page-item"><a class="page-link" href="#">3,</a></li>
+    <li class="page-item"><a class="page-link" href="#">4,</a></li>
+    <li class="page-item"><a class="page-link" href="#">5,</a></li>
+    <li class="page-item"><a class="page-link" href="#">6,</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Next">
+          <img src="./assets/arrow-open-down-svgrepo-com 1.png" alt="">
+      </a>
+    </li>
+  </ul>
+</nav>
+      </div>
+</div>
+
+          <!-- Listing 2 -->
+
+          <div class="d-flex justify-content-between mt-4 mb-4 align-items-center">
+            <h2 class="fw-normal fs-1 text-center">Best Selling Product</h2>
+              <button class="btn btn-outline btn-sm mybtn" type="submit">
+                See All
+              </button>
+            </form>
+          </div>
+
+
+
+          <!-- Cards 2 -->
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-3">
+                <div class="card text-center cardborder" style="width: 18rem">
+                  <div class="" style="position: relative;">
+                    <img src="./assets/image 3.png" class="card-img-top rounded-0 " alt="..." />
+                    <div class="image-con d-flex justify-content-center align-items-center rounded-circle" style="width: 40px;height:40px ; background-color: white; position: absolute; top: 10px; right: 10px;">
+                      <img src="./assets/heart-svgrepo-com (2) 1.png" alt="" class="heart" width="25" height="25" style="z-index: 2;">
+                    </div>
+                  </div>
+                <div class="card-body">
+                  <h6 class="card-title cardtext">$ 100.00</h6>
+                  <h6 class="card-text">Amethyst</h6>
+                  <h6 class="card-text">Heal</h6>
+                </div>
+              </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="card text-center cardborder" style="width: 18rem">
+                  <div class="" style="position: relative;">
+                    <img src="./assets/image 4.png" class="card-img-top rounded-0" alt="..." />
+                    <div class="image-con d-flex justify-content-center align-items-center rounded-circle" style="width: 40px;height:40px ; background-color: white; position: absolute; top: 10px; right: 10px;">
+                      <img src="./assets/heart-svgrepo-com (2) 1.png" alt="" class="heart" width="25" height="25" style="z-index: 2;">
+                    </div>
+                  </div>
+                <div class="card-body">
+                  <h6 class="card-title cardtext">$ 100.00</h6>
+                  <h6 class="card-text">Amethyst</h6>
+                  <h6 class="card-text">Heal</h6>
+                </div>
+              </div>
+            </div>
+              <div class="col-sm-3">
+                <div class="card text-center cardborder" style="width: 18rem">
+                  <div class="" style="position: relative;">
+                    <img src="./assets/image 5.png" class="card-img-top rounded-0" alt="..." />
+                    <div class="image-con d-flex justify-content-center align-items-center rounded-circle" style="width: 40px;height:40px ; background-color: white; position: absolute; top: 10px; right: 10px;">
+                      <img src="./assets/heart-svgrepo-com (2) 1.png" alt="" class="heart" width="25" height="25" style="z-index: 2;">
+                    </div>
+                  </div>
+                <div class="card-body">
+                  <h6 class="card-title cardtext">$ 100.00</h6>
+                  <h6 class="card-text">Amethyst</h6>
+                  <h6 class="card-text">Heal</h6>
+                </div>
+              </div>
+            </div>
+              <div class="col-sm-3">
+                <div class="card text-center cardborder" style="width: 18rem">
+                  <div class="" style="position: relative;">
+                    <img src="./assets/image 6.png" class="card-img-top rounded-0" alt="..." />
+                    <div class="image-con d-flex justify-content-center align-items-center rounded-circle" style="width: 40px;height:40px ; background-color: white; position: absolute; top: 10px; right: 10px;">
+                      <img src="./assets/heart-svgrepo-com (2) 1.png" alt="" class="heart" width="25" height="25" style="z-index: 2;">
+                    </div>
+                  </div>
+                <div class="card-body">
+                  <h6 class="card-title cardtext">$ 100.00</h6>
+                  <h6 class="card-text">Amethyst</h6>
+                  <h6 class="card-text">Heal</h6>
+                </div>
+            </div>
+          </div>
+          </div>
+        </div>
+
+
+        
+      </div>
+    </div>
+    </div>
+    
+<!-- Footer -->
+
+
+ 
+<!--  style="clip-path: polygon(0 0, 0% 100%, 25% 100%, 0 24%, 100% 0, 100% 100%, 55% 100%, 25% 100%, 0 24%, 99% 17%);
+" -->
+<div class="bg-danger">
+  <footer class="footbg text-light p-4 mt-5">
+  
+    <div class="container-fluid px-5 mt-3">
+      <div class="row">
+        <div class="col-sm-6 mt-5 mb-5">
+          <img src="./assets/Main Logo 2.png" alt="" class="w-25 mb-3">
+          <p class="fs-6 mb-0">Sign up for Update</p>
+          <div class="d-flex justify-content-between mt-3 mb-4 align-items-center">
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2 footinputtext fw-400 fs-6 footinput me-3"
+                type="search"
+                placeholder="Enter Your Email"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline btn-sm mybtn2" type="submit">
+                Submit
+              </button>
+            </form>
+          </div>
+          <img src="./assets/youtube-svgrepo-com (2) 1.png" alt="" class="me-3">
+          <img src="./assets/instagram-2-1-logo-svgrepo-com 1.png" alt="" class="me-2">
+          <img src="./assets/facebook-svgrepo-com (4) 1.png" alt="">
+        </div>
+        <div class="col-sm-3 text-right mt-5">
+          <ul class="list">
+            <li class="mb-4 fs-4">Shortcut</li>
+            <li class="mb-4">Shop Crystals</li>
+            <li class="mb-4">Speciality</li>
+            <li class="mb-4">Intentions</li>
+            <li class="mb-4">Our Story</li>
+            <li class="mb-4">Blog</li>
+            <li class="mb-4">Contact Us</li>
+            <li class="mb-4">Retreats</li>
+          </ul>
+        </div>
+        <div class="col-sm-3 text-right mt-5">
+          <ul class="list">
+            <li class="mb-4 fs-4">More Info</li>
+            <li class="mb-4">Privacy Policy</li>
+            <li class="mb-4">Terms of Use</li>
+            <li class="mb-4">Disclaimer</li>
+            <li class="mb-4">Legal</li>
+            <li class="mb-4">Media Inquiries</li>
+            <li class="mb-4">Get 20% Off</li>
+          </ul>
+        </div>
+        <hr>
+        <p class="text-center fs-6 mt-3">@2023, Rock the world.</p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+
+
+  
+
+
+
+
+
+<script src="./shopallproducts.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

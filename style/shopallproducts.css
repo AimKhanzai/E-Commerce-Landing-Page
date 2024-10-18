@@ -1,0 +1,204 @@
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.heading {
+  font-size: 6.25rem !important;
+  /* line-height: 10.6rem; */
+}
+.space {
+  padding-right: 4rem;
+  padding-left: 4rem;
+}
+.heading1 {
+  font-size: 3.75rem;
+}
+input.search {
+  width: 370px;
+  display: block;
+  padding: 9px 4px 9px 40px;
+  background: #f1f1f1 url("/assets/search-svgrepo-com\ \(8\)\ 1.png") no-repeat
+    13px;
+}
+input.text {
+  color: #adadad !important;
+  border-radius: 0;
+  border: none !important;;
+}
+input {
+  background-color: #f1f1f1;
+}
+.mybtn {
+  border-color: #1b1c27 !important;
+  width: 150px;
+  border-radius: 0;
+}
+.cardtext{
+    background: linear-gradient(to right, #83298F, 
+    #2ABFCC); 
+-webkit-text-fill-color: transparent; 
+background-clip: text; 
+}
+.cardborder{
+    border: none !important;
+}
+.pageborder{
+    border: none !important;
+    color: #1B1C27 !important;
+}
+.slidecontainer {
+  width: 100%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 5px; /* Specified height */
+  background: #83298F; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+/* Mouse-over effects
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over /
+} */
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 8px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #83298F; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 8px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #83298F; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+/* .slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width /
+  height: 25px; /* Slider handle height /
+  background: #04AA6D; /* Green background /
+  cursor: pointer; /* Cursor on hover /
+} */
+
+.color-picker {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Style each color box */
+.color-box {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+/* Add color classes for each color */
+.red { background-color: #AA9AE0; }
+.green { background-color: #E09AD9; }
+.blue { background-color: #E09A9A; }
+.yellow { background-color: #E0CC9A; }
+.orange { background-color: #E09AC4; }
+.purple { background-color: #9AC7E0; }
+.light { background-color: #9AB2E0; }
+.lgreen { background-color: #C5E09A; }
+
+.footinput{
+  background-color: #262626!important;
+  border: 1px solid #FFFFFF !important;
+  border-radius: 0!important;
+}
+.footinput::placeholder{
+  color: #676767 !important;
+}
+.footbg{
+  background-color: #262626!important;
+  /* clip-path: polygon(100% 0, 99% 100%, 0 100%, 0 6%); */
+  /* clip-path: polygon(0 0, 0% 100%, 25% 100%, 0 24%, 100% 0, 100% 100%, 55% 100%, 25% 100%, 0 24%, 99% 17%); */
+
+
+  z-index: 1;
+  /* position: relative; */
+  
+}
+.mybtn2{
+  background-color: #FFFFFF;
+  color: #262626;
+  width: 150px;
+  border-radius: 0;
+}
+.list{
+  list-style: none !important; 
+}
+/* .heart{
+  transform: translate(14.688rem,1.25rem);
+} */
+/* .image-con {
+  /* transform: translate(14.688rem,1.25rem); /
+  display: inline-block;
+  background-color: white; /* White background color 
+  border-radius: 50%; /* Rounded corners /
+  padding: 10px; /* Add padding for space around the image /
+} */
+/* .heart::before{
+  content: "";
+  background-color: #FFFFFF;
+  border-radius: 50%;
+} */
+/* .heart{
+  background: url("../assets/heart-svgrepo-com\ \(2\)\ 1.png");
+  z-index: 22;
+} */
+.mycolor{
+  width: 40px;
+  height: 40px;
+  background-color: white;
+}
+
+.bgred{
+  border: 1px solid #AA9AE0;
+}
+.bggreen{
+  border: 1px solid #E09AD9;
+}
+.bgblue{
+  border: 1px solid #E09A9A;
+}
+.bgyellow{
+  border: 1px solid #E0CC9A;
+}
+.bgorange{
+  border: 1px solid #E09AC4;
+}
+.bgpurple{
+  border: 1px solid #9AC7E0;
+}
+.bglight{
+  border: 1px solid #9AB2E0;
+}
+.bglgreen{
+  border: 1px solid #C5E09A;
+}
+
+
+/* .clip{
+  clip-path: polygon(0% 0%, 0% 100%, 0 95%, 0 10%, 100% 0, 100% 100%, 38% 100%, 35% 100%, 100% 100%, 100% 12%);
+
+} */
+
+
+
